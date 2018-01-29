@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Harry the Husky Application</title>
+</head>
+<body>
+
+<h2>Apply to be Harry the Husky!</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+		<legend>University of Washington Information</legend>
+		<div class="field">
+			<label>UW ID:</label> 
+			<input type="text" name="UW ID">
+		</div>
+		<div class="field">
+			<label>University Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Student Number:</label> 
+			<input type="text" name="student number">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Your Information</legend>
+		<div class="field">
+			<label>First Name:</label> 
+			<input type="text" name="name">
+		</div>
+		<div class="field">
+			<label>Last Name:</label> 
+			<input type="text" name="street">
+		</div>
+		<div class="field">
+			<label>Intended Major:</label> 
+			<input type="text" name="city">
+		</div>
+		<div class="field">
+			<label>Intended Graduation Year:</label> 
+			<select name="Year">
+				<option value="" selected="true">Choose a Year</option>
+				<option value="'18">2018</option>
+				<option value="'19">2019</option>
+				<option value="'20">2020</option>
+				<option value="'21">2021</option>
+				<option value="'22">2022</option>
+				<option value="'23">2023</option>
+			</select>
+		</div>
+		<div class="field">
+			<label>Gender:</label> 
+			<select name="Gender">
+				<option value="" selected="true">Select Option</option>
+				<option value="M">Male</option>
+				<option value="F">Female</option>
+				<option value="O">Prefer not to answer</option>
+			</select>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Availability</legend>
+		<div class="field">
+			<label>Do you have any prior experience in being a school or team mascot?</label> 
+			<input type="radio" name="experience" value="yes">Yes
+			<input type="radio" name="experience" value="no">No
+		</div>
+		<div class="field">
+			<label>For which major UW sport are you interested in being Harry the Husky for? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_fall" value="Football">Football</li>
+				<li><input type="checkbox" name="position_winter" value="Basketball">Basketball</li>
+				<li><input type="checkbox" name="position_spring" value="Soccer">Soccer</li>
+				<li><input type="checkbox" name="position_winter2" value="Volleyball">Volleyball</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Current School Schedule</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+				</tr>
+				<tr>
+					<th>Start Time of First Class</th>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+				</tr>
+				<tr>
+					<th>End Time of Last Class</th>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Additional Information</legend>
+		<div class="field">
+			<label>If you answered "yes" to having prior experience in being a mascot, please elaborate on your experience.</label><br>
+			<textarea name="deserve" rows="6" cols="120"></textarea>
+		</div>
+		<div class="field">
+			<label>If you answered "no", please describe why you would like to represent the University of Washington as our mascot Harry the Husky.:</label><br>
+			<textarea name="project" rows="6" cols="120"></textarea>
+		</div>
+        <div class="field">
+            <label>Please provide two references from previous jobs you've held, include an email and phone number.</label><br>
+            <textarea name="reference" rows="6" cols="120"></textarea>
+        </div>
+	</fieldset>
+
+	<input type="submit" value="Submit Application">
+
+</form>
+</body>
+</html>
